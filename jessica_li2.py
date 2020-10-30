@@ -192,9 +192,7 @@ def data_to_num_list(s):
   return list(map(float, s.split()))
 
 time_a = data_to_num_list(timeA)
-print(get_avg(time_a))
 time_b = data_to_num_list(timeB)
-print(get_avg(time_b))
 print("t-score: ", get_t_score(time_a, time_b))
 print("p-val: ", perform_2_sample_t_test(time_a, time_b))
 
